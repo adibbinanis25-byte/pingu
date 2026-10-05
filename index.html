@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For Nawshin ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         LOCK SCREEN
+    ========================== -->
+
+    <section class="lock-screen" id="lockScreen">
+
+        <div class="lock-container">
+
+            <div class="lock-icon">🔒</div>
+
+            <p class="lock-label">
+                A LITTLE SECRET
+            </p>
+
+            <h1>
+                For Nawshin
+            </h1>
+
+            <p class="lock-subtitle">
+                This little world is only for you.
+            </p>
+
+            <div class="pin-display" id="pinDisplay">
+                <span>○</span>
+                <span>○</span>
+                <span>○</span>
+                <span>○</span>
+            </div>
+
+            <div class="keypad">
+
+                <button onclick="pressNumber('1')">1</button>
+                <button onclick="pressNumber('2')">2</button>
+                <button onclick="pressNumber('3')">3</button>
+
+                <button onclick="pressNumber('4')">4</button>
+                <button onclick="pressNumber('5')">5</button>
+                <button onclick="pressNumber('6')">6</button>
+
+                <button onclick="pressNumber('7')">7</button>
+                <button onclick="pressNumber('8')">8</button>
+                <button onclick="pressNumber('9')">9</button>
+
+                <button class="empty"></button>
+                <button onclick="pressNumber('0')">0</button>
+                <button onclick="deleteNumber()">⌫</button>
+
+            </div>
+
+            <p class="hint">
+                Hint: <span>Pandu's Fav Day</span>
+            </p>
+
+            <p id="wrongPin"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         MAIN WEBSITE
+    ========================== -->
+
+    <main id="website" class="hidden">
+
+        <section class="hero">
+
+            <p class="eyebrow">
+                YOU FOUND IT
+            </p>
+
+            <h1>Nawshin</h1>
+
+            <p class="subtitle">
+                my little Pinguu 🐧
+            </p>
+
+            <p class="intro">
+                There are things I wanted to tell you...
+                so I made you a little world instead.
+            </p>
+
+            <button onclick="scrollToSection('birthday')">
+                Begin ↓
+            </button>
+
+        </section>
+
+
+        <section class="birthday" id="birthday">
+
+            <p class="section-label">
+                23 • 10
+            </p>
+
+            <h2>
+                Happy Birthday,
+                <span>Nawshin.</span>
+            </h2>
+
+            <p class="message">
+                Today isn't just another day.
+                It's the day the world got you.
+            </p>
+
+            <p class="message">
+                And somehow, I got lucky enough
+                to know you.
+            </p>
+
+            <button onclick="scrollToSection('poem')">
+                I wrote something for you ↓
+            </button>
+
+        </section>
+
+
+        <!-- =========================
+             POEM
+        ========================== -->
+
+        <section class="poem-section" id="poem">
+
+            <p class="section-label">
+                A FEW WORDS
+            </p>
+
+            <div class="poem">
+
+                <p>
+                    Your poem will go here...
+                </p>
+
+                <p>
+                    You can replace this with
+                    anything you write for her.
+                </p>
+
+            </div>
+
+            <button onclick="scrollToSection('memories')">
+                Keep going ↓
+            </button>
+
+        </section>
+
+
+        <!-- =========================
+             MEMORIES
+        ========================== -->
+
+        <section class="memories" id="memories">
+
+            <p class="section-label">
+                LITTLE MEMORIES
+            </p>
+
+            <h2>
+                Moments I
+                <span>keep.</span>
+            </h2>
+
+            <div class="photo-grid">
+
+                <div class="photo">
+                    <img src="photos/photo1.jpg">
+                </div>
+
+                <div class="photo">
+                    <img src="photos/photo2.jpg">
+                </div>
+
+                <div class="photo">
+                    <img src="photos/photo3.jpg">
+                </div>
+                
+                <div class="photo"> 
+                    <img src="photos/photo4.jpg"
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             LETTER
+        ========================== -->
+
+        <section class="letter" id="letter">
+
+            <div class="letter-box">
+
+                <p class="section-label">
+                    FOR MY PINGUU
+                </p>
+
+                <h2>
+                    Dear Nawshin,
+                </h2>
+
+                <p>
+                    Your real letter will go here.
+                </p>
+
+                <p>
+                    This is where you can tell her
+                    everything you couldn't fit anywhere else.
+                </p>
+
+                <p class="signature">
+                    — Pandu 🐼
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FINAL
+        ========================== -->
+
+        <section class="ending">
+
+            <p class="tiny">
+                ONE LAST THING
+            </p>
+
+            <h2>
+                Happy Birthday,
+                <span>Pinguu.</span>
+            </h2>
+
+            <p>
+                I hope this little world reminds you
+                just how special you are.
+            </p>
+
+            <div class="heart">
+                ♥
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- YOUR SONG -->
+
+    <audio id="birthdaySong" loop>
+        <source src="song.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
