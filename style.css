@@ -416,12 +416,16 @@ button:hover {
     background: #111;
 }
 
+
 #memories .photo img {
     display: block;
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     object-fit: contain !important;
-    transition: transform 0.5s;
+    object-position: center;
+    transition: none;
+}
+
 }
 
 #memories .photo:hover img {
