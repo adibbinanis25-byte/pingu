@@ -243,6 +243,17 @@
         <div class="photo"><img src="Photo_58.jpg" alt="Memory 58"></div>
     </div>
 </section>
+<div id="gallery" class="gallery">
+    <button class="gallery-close" onclick="closeGallery()">✕</button>
+
+    <button class="gallery-arrow prev" onclick="changePhoto(-1)">❮</button>
+
+    <img id="gallery-image" src="" alt="Memory">
+
+    <button class="gallery-arrow next" onclick="changePhoto(1)">❯</button>
+
+    <p id="gallery-count"></p>
+</div>
 
         <!-- =========================
              LETTER
@@ -358,17 +369,6 @@
     
 
 
-<div id="gallery" class="gallery">
-    <button class="gallery-close" onclick="closeGallery()">✕</button>
-
-    <button class="gallery-arrow prev" onclick="changePhoto(-1)">❮</button>
-
-    <img id="gallery-image" src="" alt="Memory">
-
-    <button class="gallery-arrow next" onclick="changePhoto(1)">❯</button>
-
-    <p id="gallery-count"></p>
-</div>
 <script src="script.js" defer></script>
 </body>
 
