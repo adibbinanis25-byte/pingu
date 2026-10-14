@@ -408,7 +408,7 @@ button:hover {
 }
 
 #memories .photo {
-    width: 100%;
+    width: auto;
     height: auto;
     aspect-ratio: 1 / 1;
     overflow: hidden;
@@ -418,8 +418,8 @@ button:hover {
 
 #memories .photo img {
     display: block;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     object-fit: contain !important;
     transition: transform 0.5s;
 }
